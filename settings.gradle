@@ -1,0 +1,6 @@
+rootProject.name = 'tp°1'
+
+['ex01', 'ex02'].each {
+    include ":tp01-${it}"
+    project(":tp01-${it}").projectDir = file(it)
+}
